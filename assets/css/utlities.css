@@ -1,0 +1,259 @@
+/**********Gerais**********/
+
+:root {
+  --hue-color: 250;
+
+  --primary-color: hsl(var(--hue-color), 69%, 61%);
+  --primary-color-second: hsl(var(--hue-color), 30%, 8%);
+  --sucess-color: hsl(111, 63%, 51%);
+
+  --secondary-color: #002248;
+  --light-color: #f4f4f4;
+  --bkg-white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10% 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/***********Utilities*********/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: var(--bkg-white);
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+/*Margens*/
+.m-l {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 1.5rem;
+}
+.m-3 {
+  margin: 2.5rem;
+}
+
+.my-l {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 1.5rem 0;
+}
+.my-3 {
+  margin: 2.5rem 0;
+}
+
+.mx-l {
+  margin: 0 1rem;
+}
+.mx-2 {
+  margin: 0 1.5rem;
+}
+.mx-3 {
+  margin: 0 2rem;
+}
+
+/*Paddings*/
+.p-l {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 1.5rem;
+}
+.p-3 {
+  padding: 2.5rem;
+}
+.py-l {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 1.5rem 0;
+}
+.py-3 {
+  padding: 2.5rem 0;
+}
+
+.px-l {
+  padding: 0 1rem;
+}
+.px-2 {
+  padding: 0 1.5rem;
+}
+.px-3 {
+  padding: 0 2.5rem;
+}
+
+/*Buttons*/
+
+.btn {
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  background-color: var(--primary-color);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px white solid;
+}
+
+/*Backgrounds & colored*/
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--bkg-white);
+}
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--bkg-white);
+}
+.bg-dark,
+.btn-dark {
+  background-color: var(--secondary-color);
+  color: var(--bkg-white);
+}
+.bg-dark,
+.btn-dark {
+  background-color: var(--light-color);
+  color: #333;
+}
+.bg-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: #333;
+}
+
+.bg-dark a {
+  color: white;
+}
+
+/* Text sizes*/
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*Alert*/
+.alert {
+  background-color: var(--light-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.alert i {
+  margin-right: 10px;
+}
+
+.alert-sucess {
+  background-color: var(--sucess-color);
+  color: #fff;
+}
+.alert-error {
+  background-color: var(--error-color);
+  color: #fff;
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
